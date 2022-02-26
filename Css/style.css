@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;  
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: #f0f1e2;
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.082);
+    box-shadow: 0px 1px 15px rgba(40, 3, 75, 0.25);
+}
+header img{
+    height: 70px;
+}
+nav{
+    display: flex;
+    gap: 50px;
+}
+nav a{
+    color: rgb(132, 89, 212);
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 24px;
+}
+.github {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    padding-top: 100px;
+    align-items: center;
+    text-align: justify;
+}
+
+.github-escrito{
+    color: #5C6BC0;
+}
+.github-escrito h1{
+    font-family: 'Righteous';
+    font-size: 65px;
+    text-shadow: 3px 3px 2px rgba(40, 3, 75, 0.25);
+}
+.github-escrito h3{
+    font-family: 'Source Code Pro';
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+.github button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #5C6BC0;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 20px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+   }
+   
+.github button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #5C6BC0;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+.github button:hover {
+    color: #e8e8e8;
+   }
+   
+.github button:hover::before {
+    width: 100%;
+   }
+.projetos{
+    margin-top: 130px;
+    background-color: #5C6BC0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.projetos-conteudo{
+    padding: 50px;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    font-size: 26px;
+    color: #e8e8e8;
+}
+.emoji::after {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.wave::after {
+    content: '✋🏻';
+    --emoji: '👋🏻';
+    animation-name: twoFrames;
+    animation-duration: 1s;
+}
+@keyframes twoFrames {
+    50% {
+        content: var(--emoji);
+    }
+}
+
+.projetos-conteudo strong{
+    font-size: 42px;
+}
+
+.projetos img{
+    height: 450px;
+}
+
+.repo{
+    background-color: #c0c2ad;
+    font-family: 'Sarala';
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 90px;
+}
+.repo-containers{   
+    display: inline-block;
+    width: calc(33.3% - 4px);
+    margin-left: 1px;
+    height: 120px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    box-shadow: 3px 5px 7px rgba(40, 3, 75, 0.25);
+    padding-top: 20px;
+}
+.repo-containers a{
+    color: #384172;
+    font-weight: 500;
+    font-size: 20px;
+}
