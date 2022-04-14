@@ -3,20 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;  
+    text-decoration: none;
 }
-html, body{
+
+html,
+body {
     height: 100%;
 }
-body{
+
+body {
     background-color: #f0f1e2;
 
 }
-header{
+
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,19 +29,23 @@ header{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.082);
     box-shadow: 0px 1px 15px rgba(40, 3, 75, 0.25);
 }
-header img{
+
+header img {
     height: 70px;
 }
-nav{
+
+nav {
     display: flex;
     gap: 50px;
 }
-nav a{
+
+nav a {
     color: rgb(132, 89, 212);
     font-family: 'Nunito';
     font-weight: 600;
     font-size: 24px;
 }
+
 .github {
     display: flex;
     flex-direction: row;
@@ -48,19 +56,22 @@ nav a{
     text-align: justify;
 }
 
-.github-escrito{
+.github-escrito {
     color: #5C6BC0;
 }
-.github-escrito h1{
+
+.github-escrito h1 {
     font-family: 'Righteous';
     font-size: 65px;
     text-shadow: 3px 3px 2px rgba(40, 3, 75, 0.25);
 }
-.github-escrito h3{
+
+.github-escrito h3 {
     font-family: 'Source Code Pro';
     padding-bottom: 30px;
     font-size: 40px;
 }
+
 .github button {
     padding: 15px 25px;
     border: unset;
@@ -71,13 +82,13 @@ nav a{
     position: relative;
     font-weight: 1000;
     font-size: 20px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
     overflow: hidden;
     cursor: pointer;
-   }
-   
+}
+
 .github button::before {
     content: "";
     position: absolute;
@@ -88,31 +99,47 @@ nav a{
     border-radius: 15px;
     background-color: #5C6BC0;
     z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms
-   }
+}
+
 .github button:hover {
     color: #e8e8e8;
-   }
-   
+}
+
 .github button:hover::before {
     width: 100%;
-   }
-.projetos{
+}
+
+.projetos {
     margin-top: 130px;
     background-color: #5C6BC0;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.projetos-conteudo{
+
+.projetos-conteudo {
     padding: 50px;
     font-family: 'Source Code Pro';
     font-weight: 400;
     font-size: 26px;
     color: #e8e8e8;
 }
+
+.projetos-conteudo strong {
+    font-size: 42px;
+}
+
+.imagem-projeto {
+    height: 70vh;
+}
+
+.imagem-projeto img {
+    height: 100%;
+}
+
 .emoji::after {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -124,45 +151,138 @@ nav a{
     animation-name: twoFrames;
     animation-duration: 1s;
 }
+
 @keyframes twoFrames {
     50% {
         content: var(--emoji);
     }
 }
 
-.projetos-conteudo strong{
-    font-size: 42px;
-}
-
-.projetos img{
-    height: 450px;
-}
-
-.repo{
-    background-color: whitesmoke;
+.repo {
+    background-color: #f2f3eb;
     font-family: 'Sarala';
     justify-content: center;
     align-items: center;
     padding-bottom: 90px;
-    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    padding-bottom: 80px;
 }
-.repo-containers{   
+
+.repo h2 {
+    padding: 30px;
+    font-size: 30px;
+}
+
+.repo-containers {
     display: inline-block;
     width: 33.3%;
+    min-width: 250px;
     margin: 20px -4px 0px 0px;
     height: 250px;
     text-align: center;
     font-size: 24px;
     font-weight: 400;
     box-shadow: 3px 5px 7px rgba(40, 3, 75, 0.25);
-    padding: 20px 30px;
+    padding: 40px 30px;
+    border-radius: 40px;
 }
-.repo-containers img{
+
+.repo-containers img {
     height: 60%;
 }
-.repo-containers a{
+
+.repo-containers a {
     display: block;
     color: #384172;
     font-weight: 500;
     font-size: 20px;
+}
+
+.img-meta {
+    background-image: url(https://i.pinimg.com/originals/ab/65/25/ab6525b299477019027ddbd33a90c4b7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+.img-meta p {
+    font-size: 60px;
+    padding-top: 160px;
+    color: #e8e8e8;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.meta-conteudo {
+    background-color: #5C6BC0;
+    padding: 80px 40px;
+
+}
+
+.meta-conteudo p {
+    margin: 0 auto;
+    font-size: 24px;
+    width: 80%;
+    color: #e8e8e8;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-family: 'Nunito';
+}
+
+footer {
+    background-color: #d7cfd8;
+    padding-top: 10px;
+    border-top: 3px solid #384172;
+    height: 100px;
+    text-align: center;
+}
+
+footer p {
+    padding: 10px;
+    color: rgb(145, 145, 145);
+}
+
+.divs-soft {
+    text-align: center;
+    padding: 50px 20px;
+
+}
+
+.soft-skill {
+    padding: 20px 0px;
+    width: calc(33.3% - 4px);
+    height: auto;
+    display: inline-block;
+    color: #252525;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.divs-soft img {
+    height: 120px;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 700px) {
+    .repo-containers {
+        width: 100%;
+    }
+
+    .soft-skill {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .repo-containers {
+        width: 50%;
+    }
 }
