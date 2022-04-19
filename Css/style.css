@@ -13,6 +13,7 @@
 html,
 body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -176,20 +177,19 @@ nav a {
 
 .repo-containers {
     display: inline-block;
-    width: 33.3%;
+    width: 300px;
     min-width: 250px;
-    margin: 20px -4px 0px 0px;
-    height: 250px;
+    margin: 20px;
     text-align: center;
     font-size: 24px;
     font-weight: 400;
     box-shadow: 3px 5px 7px rgba(40, 3, 75, 0.25);
-    padding: 40px 30px;
+    padding: 40px;
     border-radius: 40px;
 }
 
 .repo-containers img {
-    height: 60%;
+    height: 80px;
 }
 
 .repo-containers a {
@@ -282,7 +282,52 @@ footer p {
 }
 
 @media screen and (max-width: 900px) {
+    .repo {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
     .repo-containers {
-        width: 50%;
+        width: 33.3%;
+    }
+
+    .github {
+        margin-top: 40px;
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    lottie-player {
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+
+    .projetos {
+        display: block;
+
+    }
+
+    .imagem-projeto img {
+        width: 100%;
+        padding: 0px;
+    }
+
+    nav a {
+        visibility: hidden;
+    }
+
+    header {
+        z-index: 2;
+        padding: 40px;
+        position: fixed;
+        width: 100%;
+        background-color: #f2f3eb;
+    }
+
+    header img {
+        margin: 0 auto;
+        position: absolute;
     }
 }
