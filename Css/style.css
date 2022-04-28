@@ -221,6 +221,7 @@ nav a {
 .meta-conteudo {
     background-color: #5C6BC0;
     padding: 80px 40px;
+    width: 100%;
 
 }
 
@@ -233,6 +234,15 @@ nav a {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     font-family: 'Nunito';
+}
+
+.meta-conteudo iframe {
+    border: none;
+    margin: 20px;
+    width: 80vw;
+    height: 80vh;
+
+
 }
 
 footer {
@@ -320,7 +330,7 @@ footer p {
 
     header {
         z-index: 2;
-        padding: 40px;
+        padding: 30px;
         position: fixed;
         width: 100%;
         background-color: #f2f3eb;
